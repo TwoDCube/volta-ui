@@ -1,0 +1,33 @@
+::ng-deep:root {
+  --v-button-min-width: 300px;
+  --v-button-text-color: #000;
+  --v-button-color: var(--v-theme-color);
+  --v-button-border-width: 2px;
+  --v-button-outline-width: 2px;
+  --v-button-raised-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  --v-button-font-size: 16px;
+  --v-button-font-weight: 400;
+  --v-button-text-transform: uppercase;
+  --v-button-height: 48px;
+  --v-button-border-radius: 4px;
+}
+
+button {
+  min-width: var(--v-button-min-width);
+  background-color: var(--i-button-filled-color, transparent);
+  color: var(--v-button-text-color);
+  border-width: var(--v-button-border-width);
+  font-size: var(--v-button-font-size);
+  font-weight: var(--v-button-font-weight);
+  text-transform: var(--v-button-text-transform);
+  height: var(--v-button-height);
+  border-radius: var(--v-button-border-radius);
+}
+
+:host.filled button {
+  --i-button-filled-color: var(--v-button-color);
+}
+
+:host.raised button {
+  box-shadow: var(--v-button-raised-box-shadow);
+}
