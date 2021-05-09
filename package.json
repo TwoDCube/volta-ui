@@ -59,7 +59,7 @@
     "@nrwl/jest": "10.0.7",
     "jest": "25.2.3",
     "@types/jest": "25.1.4",
-    "ts-jest": "25.2.1",
+    "ts-jest": "26.5.6",
     "cypress": "4.12.1",
     "@nrwl/cypress": "10.0.7"
   }
